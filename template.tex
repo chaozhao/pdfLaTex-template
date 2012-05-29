@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage[titles]{tocloft}
+\usepackage{setspace}
+\usepackage{array}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
+\usepackage{pdflscape}
+\usepackage[pdftex]{graphicx}
+\usepackage[parfill]{parskip}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage[english]{babel}
+
+%----------Config Data format---------------------------------------------
+\usepackage{datetime}
+\newdateformat{dashdate}{\THEYEAR-\twodigit{\THEMONTH}-\twodigit{\THEDAY}}
+%-------------------------------------------------------------------------
+
+\begin{document}
+\raggedright{} %Left justified, make report more readable
+\pagenumbering{roman}
+
+%----------------------------Cover Page---------------------------------------
+\title{This is report title}
+\author{Author Name}
+\date{today}
+\maketitle
+
+%--------------------------Revision History-----------------------------------
+\renewcommand*\thesection{\Large{\arabic{section}}}
+%\renewcommand*\thesubsection{\Large{\arabic{section. subsection}}}
+\section*{Revision History}
+	\begin{table}[h!]
+		\centering
+		\begin{longtable}{|c|c|c|p{7cm}|} \hline
+%			\rowcolor[rgb]{0.4,0.8,0.9}  
+			\textbf{Version} & \textbf{Date} & \textbf{Reviewer} & \textbf{Brief Details} \\\hline
+			\endhead
+			\endfoot
+			\endlastfoot
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+			& & & \\\hline
+		\end{longtable}
+		%\caption{Revision History}
+	\end{table}
+\pagebreak
+
+%----------------------------Executive Summary-----------------------------
+\renewcommand{\abstractname}{Executive Summary}
+\begin{abstract}
+This is a abstraction
+
+\end{abstract}
+
+
+%----------------------------TABLE OF CONTENTS---------------------------------
+\thispagestyle{empty}
+\renewcommand\contentsname{Table of Contents}\tableofcontents
+\listoffigures
+\pagebreak
+
+%----------------Footer/Header FOR REST OF DOCUMENT------------------------
+\pagestyle{fancy}
+\lhead{University}
+\lfoot{Report Name}
+\cfoot{\thepage}
+\rfoot{Author Name}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%----------------Body of Document------------------------
+\pagenumbering{arabic}
+
+\section{Introduction}
+
+\subsection{Purpose}
+
+\subsection{Project Background}
+
+\subsection{Scope}
+
+\section{System Stakeholders and Concerns}
+
+\section{System Architecture}
+	
+\subsection{Client--Server Description}
+
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{ClientServer.png}
+		\caption{Client-server architecture in the context of VCE}
+	\end{figure}
+	
+\subsection{Three-Tier Description}
+
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{ThreeTier.png}
+		\caption{Three-tier architecture in the context of VCE}
+	\end{figure}
+
+\subsection{Architectural Views}
+
+\subsubsection{Logical View}
+
+\subsubsection{Physical View}
+
+\subsection{Design Rational}
+
+    The rational for choosing the proposed architecture can be traced to the
+    fact that the VCE is an extension to a pre existing software package, known
+    as the VRE and in order to maintain compatibility a similar design was
+    chosen.  A military training tool known as VBS2 is a required interface to
+    our product.  This led to the decision to use a client server architecture.
+
+
+\end{document}
