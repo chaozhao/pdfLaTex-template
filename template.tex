@@ -1,8 +1,7 @@
-\documentclass[11pt,a4paper]{report}
-\usepackage[margin=2.54cm]{geometry}
+\documentclass[12pt,a4paper]{report}
+\usepackage[margin=2.50cm]{geometry}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
-\usepackage{colortbl}
 \usepackage{color}
 \usepackage{fancyhdr}
 \usepackage[titles]{tocloft}
@@ -22,7 +21,7 @@
 %-------------------------------------------------------------------------
 
 \begin{document}
-\raggedright{} %Left justified, make report more readable
+%\raggedright{} %Left justified, make report more readable
 \pagenumbering{roman}
 
 %----------------------------Cover Page---------------------------------------
@@ -66,8 +65,18 @@
 %----------------------------Executive Summary-----------------------------
 \renewcommand{\abstractname}{Executive Summary}
 \begin{abstract}
-This is a abstraction
+This report provides an analysis and evaluation of the current and prospective profitability, liquidity and financial stability of Outdoor Equipment Ltd. Methods of analysis include trend, horizontal and vertical analyses as well as ratios such as Debt, Current and Quick ratios. Other calculations include rates of return on Shareholders Equity and Total Assets and earnings per share to name a few. All calculations can be found in the appendices. Results of data analysed show that all ratios are below industry averages. In particular, comparative performance is poor in the areas of profit margins, liquidity, credit control, and inventory management.
 
+The report finds the prospects of the company in its current position are not positive. The major areas of weakness require further investigation and remedial action by management. Recommendations discussed include:
+
+\begin{itemize}
+\item improving the average collection period for accounts receivable
+\item improving/increasing inventory turnover
+\item reducing prepayments and perhaps increasing inventory levels
+\end{itemize}
+
+The report also investigates the fact that the analysis conducted has limitations. Some of the limitations include:
+forecasting figures are not provided nature and type of company is not known nor the current economic conditions data limitations as not enough information is provided or enough detail i.e. monthly details not known results are based on past performances not present
 \end{abstract}
 
 
@@ -93,43 +102,18 @@ This is a abstraction
 
 \subsection{Purpose}
 
-\subsection{Project Background}
+\subsection{Background}
 
 \subsection{Scope}
 
-\section{System Stakeholders and Concerns}
-
-\section{System Architecture}
-	
-\subsection{Client--Server Description}
-
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[width=0.8\textwidth]{ClientServer.png}
-		\caption{Client-server architecture in the context of VCE}
+		\includegraphics[width=0.5\textwidth]{Apple_first_logo.png}
+		\caption{Apple First Logo}
 	\end{figure}
 	
-\subsection{Three-Tier Description}
+\section{Body}
 
-	\begin{figure}[h!]
-		\centering
-		\includegraphics[width=0.8\textwidth]{ThreeTier.png}
-		\caption{Three-tier architecture in the context of VCE}
-	\end{figure}
-
-\subsection{Architectural Views}
-
-\subsubsection{Logical View}
-
-\subsubsection{Physical View}
-
-\subsection{Design Rational}
-
-    The rational for choosing the proposed architecture can be traced to the
-    fact that the VCE is an extension to a pre existing software package, known
-    as the VRE and in order to maintain compatibility a similar design was
-    chosen.  A military training tool known as VBS2 is a required interface to
-    our product.  This led to the decision to use a client server architecture.
-
+\section{Conclusion}
 
 \end{document}
